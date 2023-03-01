@@ -1,0 +1,42 @@
+/*******************************************************************************
+ The array-form of an integer num is an array representing its digits in left to right order.
+
+For example, for num = 1321, the array form is [1,3,2,1].
+Given num, the array-form of an integer, and an integer k, return the array-form of the integer num + k.
+
+ 
+
+Example 1:
+
+Input: num = [1,2,0,0], k = 34
+Output: [1,2,3,4]
+Explanation: 1200 + 34 = 1234
+Example 2:
+*******************************************************************************/
+var arrayFormInteger = function(num, k) {
+
+  
+};
+  
+/**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
+module.exports = arrayFormInteger;
+
+
+
+
+
+// var arrayFormInteger = function(num, k) {
+//   let carry = 0;
+//       let i = num.length - 1;
+//       const result = [];
+  
+//       while (i >= 0 || k > 0 || carry > 0) {
+//           const digit = (i >= 0 ? num[i] : 0) + (k % 10) + carry;
+//           result.unshift(digit % 10);
+//           carry = Math.floor(digit / 10);
+//           i--;
+//           k = Math.floor(k / 10);
+//       }
+  
+//       return result;
+//   };
